@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'y+xzcn=848&50%i@4gt(5gutq%q&qq9=g%6-5b)a!j5!ttc&=n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['eirmonshop.com','www.eirmonshop.com']
 
 
 # Application definition
@@ -111,3 +111,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+
+try:
+    from . local_settings import *
+except ImportError:
+    print('No local_settings detected, looks like you are on production')
