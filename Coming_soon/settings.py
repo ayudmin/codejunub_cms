@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'y+xz55865494f9w49w4eywvdffn=848&50%i@4gt(5gutq%q&qq9=g%6-5b)a!j5!ttc&=n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['codejunub.com','www.codejunub.com']
+ALLOWED_HOSTS = ['codejunub.com','www.codejunub.com', '167.99.193.78']
 
 
 # Application definition
@@ -67,8 +67,12 @@ WSGI_APPLICATION = 'Coming_soon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+	'NAME': 'codejunub',
+	'USER': 'codejunub_user',
+	'PASSWORD': 'mansnothot',
+	'HOST': 'localhost',
+	'PORT': '', 
     }
 }
 
