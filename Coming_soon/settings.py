@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'y+xz55865494f9w49w4eywvdffn=848&50%i@4gt(5gutq%q&qq9=g%6-5b)a!j5!ttc&=n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['codejunub.com','www.codejunub.com', '167.99.193.78']
 
