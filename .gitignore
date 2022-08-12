@@ -19,3 +19,7 @@ core/migrations/__pycache__/__init__.cpython-38.pyc
 /core/__pycache__/models.cpython-38.pyc
 /core/__pycache__/views.cpython-38.pyc
 /core/migrations/__pycache__/__init__.cpython-38.pyc
+.gitignore
+.idea
+Coming_soon/local_settings.py
+/db.sqlite3
