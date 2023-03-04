@@ -23,3 +23,6 @@ core/migrations/__pycache__/__init__.cpython-38.pyc
 .idea
 Coming_soon/local_settings.py
 /db.sqlite3
+env
+.env
+.env_pro
